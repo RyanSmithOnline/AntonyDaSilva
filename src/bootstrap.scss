@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px
+);
+$dark: #1b1f22;
+$secondary: #474d52;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.youtube-video-container {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 43%;
+    position: relative;
+}
+
+.youtube-video-container iframe, .youtube-video-container object, .youtube-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.shadow-5 {
+    box-shadow: 0 0 38px 3px rgba(0, 0, 0, 0.14), 0 0 46px 8px rgba(0, 0, 0, 0.12), 0 0 15px -7px rgba(0, 0, 0, 0.20);
+}
+.flip-img {
+    transform: scaleX(-1);
+}

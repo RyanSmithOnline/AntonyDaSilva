@@ -1,0 +1,21 @@
+{
+  "name": "antony-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp fileinclude && gulp bootstrapjscopy && gulp mediacopy && concurrently --kill-others \"npm run watch-html\" \"npm run watch-css\"",
+    "watch-html": "gulp watch",
+    "watch-css": "node-sass --include-path scss src/bootstrap.scss public/css/bootstrap.css && node-sass --include-path scss --watch src/bootstrap.scss public/css/bootstrap.css",
+    "build": "gulp fileinclude gulp bootstrapjscopy && gulp mediacopy && node-sass --include-path scss src/bootstrap.scss public/css/bootstrap.css"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "concurrently": "latest",
+    "gulp": "latest",
+    "gulp-file-include": "latest",
+    "node-sass": "latest",
+    "bootstrap": "latest"
+  }
+}
