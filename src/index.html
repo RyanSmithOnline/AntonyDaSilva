@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antony da Silva</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./media/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./media/slick-theme.css"/>
+
 </head>
 
 <body class="min-vh-100 d-flex flex-column bg-secondary">
 
     @@include('./partials/header.html')
 
-    <main class="flex-grow-1 container-lg py-4 px-5 shadow-5 bg-dark">
+    <main class="flex-grow-1 container-lg py-4 px-5 shadow-5 bg-dark mt-5">
 
         @@include('./partials/section-title.html', {
             "section-title": "Profile",
@@ -85,6 +88,7 @@
                     <div>E: a_dasilva01@yahoo.co.uk</div>
                 </div>
             </div>
+            <a href="./media/Antony Current Acting CV.docx">Download CV</a>
         </div>
 
         @@include('./partials/section-title.html', {
@@ -137,34 +141,104 @@
         })
 
         <div class="row my-3 g-0">
-            <div class="col-12 col-md-8">
-                <div>Black Gold</div>
-                <audio src="./media/Black Gold.mp3"></audio>
-                <div>Black Majic Chocolates</div>
-                <audio src="./media/Black Majic Chocolates"></audio>
-                <div>Bombay Saphire</div>
-                <audio src="./media/Bombay Saphire"></audio>
-                <div>Elephant Man</div>
-                <audio src="./media/Elephant Man.mp3"></audio>
-                <div>Hargreaves of Taunton</div>
-                <audio src="./media/Hargreaves of Taunton.mp3"></audio>
-                <div>Intergalactic Federation</div>
-                <audio src="./media/Intergalactic Federation.mp3"></audio>
-                <div>LOL Comedy show_Magic Malta revised (1)</div>
-                <audio src="./media/LOL Comedy show_Magic Malta revised (1).mp3"></audio>
-                <div>MAK Car Care Centres</div>
-                <audio src="./media/MAK Car Care Centres.mp3"></audio>
-                <div>Quinta Da Rosa</div>
-                <audio src="./media/Quinta Da Rosa.mp3"></audio>
-                <div>Summit Furniture</div>
-                <audio src="./media/Summit Furniture.mp3"></audio>
-                <div>The Dragon Who Couldn't Help Breathing Fire</div>
-                <audio src="./media/The Dragon Who Couldn't Help Breathing Fire.mp3"></audio>
-                <div>Twinnings English Breakfast</div>
-                <audio src="./media/Twinnings English Breakfast.mp3"></audio>
+            <div class="col-12 col-md-6">
+                    <div class="text-light mb-2 fs-4">Black Gold</div>
+                    <audio controls class="mb-2">
+                            <source src="./media/Black Gold.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="text-light mb-2 fs-4">Black Majic Chocolates</div>
+                    <audio controls class="mb-2">
+                        <source src="./media/Black Majic Chocolates.mp3" type="audio/mpeg">
+                </audio>
+                    <div class="text-light mb-2 fs-4">Bombay Saphire</div>
+                    <audio controls class="mb-2">
+                        <source src="./media/Bombay Saphire.mp3" type="audio/mpeg">
+                </audio>
+                    <div class="text-light mb-2 fs-4">Elephant Man</div>
+                    <audio controls class="mb-2">
+                        <source src="./media/Elephant Man.mp3" type="audio/mpeg">
+                </audio>
+                    <div class="text-light mb-2 fs-4">Hargreaves of Taunton</div>
+                    <audio controls class="mb-2">
+                        <source src="./media/Hargreaves of Taunton.mp3" type="audio/mpeg">
+                </audio>
+                <div class="text-light mb-2 fs-4">Intergalactic Federation</div>
+                <audio controls class="mb-2">
+                    <source src="./media/Intergalactic Federation.mp3" type="audio/mpeg">
+            </audio>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6">
+                <div class="text-light mb-2 fs-4">LOL Comedy show_Magic Malta revised</div>
+                <audio controls class="mb-2">
+                    <source src="./media/LOL Comedy show_Magic Malta revised (1).mp3" type="audio/mpeg">
+            </audio>
+                <div class="text-light mb-2 fs-4">MAK Car Care Centres</div>
+                <audio controls class="mb-2">
+                    <source src="./media/MAK Car Care Centres.mp3" type="audio/mpeg">
+            </audio>
+                <div class="text-light mb-2 fs-4">Quinta Da Rosa</div>
+                <audio controls class="mb-2">
+                    <source src="./media/Quinta Da Rosa.mp3" type="audio/mpeg">
+            </audio>
+                <div class="text-light mb-2 fs-4">Summit Furniture</div>
+                <audio controls class="mb-2">
+                    <source src="./media/Summit Furniture.mp3" type="audio/mpeg">
+            </audio>
+                <div class="text-light mb-2 fs-4">The Dragon Who Couldn't Help Breathing Fire</div>
+                <audio controls class="mb-2">
+                    <source src="./media/The Dragon Who Couldn't Help Breathing Fire.mp3" type="audio/mpeg">
+            </audio>
+                <div class="text-light mb-2 fs-4">Twinnings English Breakfast</div>
+                <audio controls class="mb-2">
+                    <source src="./media/Twinnings English Breakfast.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+        </div>
 
+        @@include('./partials/section-title.html', {
+            "section-title": "Gallery",
+        })
+
+        <div class="row my-3 g-0">
+            <div class="col-12">
+                <div class="responsive">
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony1.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony2.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony3.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony4.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony5.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony6.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony8.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony9.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony10.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony11.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony12.jpg">
+                    </div>
+                    <div>
+                        <img style="max-height: 300px;margin: auto;" src="./media/antony13.jpg">
+                    </div>
+                  </div>
             </div>
         </div>
 
@@ -172,6 +246,48 @@
 
     @@include('./partials/footer.html')
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./media/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+            ]
+          });
+        });
+    </script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 
